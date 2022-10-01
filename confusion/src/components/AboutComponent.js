@@ -49,8 +49,8 @@ function RenderLeader(props) {
                                          show="touched"
                                          messages={{
                                              required: 'Required',
-                                             minLength : 'Must be greater than 2 characters',
-                                             maxLength: 'Must be 15 characters or less'
+                                             minLength : 'First name should be greater than 2 characters',
+                                             maxLength: 'First name cannot be greater than 15 characters'
                                          }} />
                                 </Col>
                             </Row>
