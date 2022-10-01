@@ -229,17 +229,6 @@ const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => val && (val.length >= len);
 
 
-class CommentForm extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            isModalOpen: false
-        };
-        this.toggleModal = this.toggleModal.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
     toggleModal() {
         this.setState({
           isModalOpen: !this.state.isModalOpen
