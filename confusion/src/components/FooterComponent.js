@@ -19,7 +19,8 @@ function Footer(props) {
                                          show="touched"
                                          messages={{
                                              required: 'Required',
-                                             minLength : 'Must be greater than 2 characters',
+                                             minLength : 'Valid message must be greater than 2 characters
+						   ',
                                              maxLength: 'Must be 15 characters or less'
                                          }} />
                                 </Col>
