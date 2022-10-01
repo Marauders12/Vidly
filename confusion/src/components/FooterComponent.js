@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom';
 
 function Footer(props) {
     return(
-	    <Form model= "feedback" onSubmit={(values) => this.handleSubmit(values)}>
+        <div>
+             <Form model= "feedback" onSubmit={(values) => this.handleSubmit(values)}>
                             <Row className="form-group">
                                 <Label htmlFor="firstname" md={2}>First Name</Label>
                                 <Col md={10}>
@@ -19,8 +20,7 @@ function Footer(props) {
                                          show="touched"
                                          messages={{
                                              required: 'Required',
-                                             minLength : 'Valid message must be greater than 2 characters
-						   ',
+                                             minLength : 'Valid message must be greater than 2 characters',
                                              maxLength: 'Must be 15 characters or less'
                                          }} />
                                 </Col>
@@ -164,6 +164,8 @@ function Footer(props) {
             </div>
         </div>
     </div>
+ </div>
+	   
     )
 }
 
